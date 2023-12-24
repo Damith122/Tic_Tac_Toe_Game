@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+   
+    
+</head>
+<body>
+
+
+    <audio id="myAudio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+        
+
+    <!-- for animation -->
+    
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+      
+<div class="main">
+    <h1 class="game-title">Tic <span class="white-text">Tac</span> Toe</h1>
+    <div class="game-container">
+        <button id="start-button" class="start-button" onclick="startGame(); playAudio()" >Start Game</button>
+        <div class="board" id="board">
+            <!-- Cells will be dynamically added here -->
+        </div>
+        <div id="winner-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p id="winner-message"></p>
+                <button onclick="newGame()">New Game</button>
+                
+            </div>
+            
+        </div><br>
+        <button id="restart-button" class="restart-button hide" onclick="restartGame()">RESTART</button>
+    </div>
+   
+</div>
+
+
+
+    <script src="script.js"></script>
+
+   
+    <footer>DEVELOPED BY DAMITH PERERA</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
